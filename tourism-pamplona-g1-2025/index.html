@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit Pamplona</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      background: url('images/pamplona.jpg') center/cover no-repeat fixed;
+      color: #fff;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: -1;
+    }
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+    .hero-content{position:relative; z-index:2;}
+    section {
+      padding: 80px 0;
+      position: relative;
+    }
+    .section-overlay {
+      background: rgba(0,0,0,0.5);
+      padding: 40px;
+      border-radius: 20px;
+    }
+    .card-overlay {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 20px;
+    }
+    .navbar {
+      background: rgba(0,0,0,0.7) !important;
+    }
+    .badge {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Visit Pamplona</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#food&accomodations">Food & Accommodations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#officials">Government</a></li>
+        <li class="nav-item"><a class="nav-link" href="#page">Contact Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="#developer">Developers</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="hero-content">
+    <h1 class="display-4 fw-bold">Welcome to Pamplona</h1>
+    <p class="lead">Discover the Hidden Gem of Negros Oriental</p>
+    <a href="#about" class="btn btn-primary btn-lg">Explore</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container section-overlay">
+    <h2 class="text-center mb-5 display-5 fw-bold">About Pamplona</h2>
+    <div class="p-5 rounded-4 mb-5 card-overlay text-white">
+      <h3 class="fw-bold text-center mb-3">Our Town's Story</h3>
+      <p class="text-center px-3">
+        Pamplona is a 5th class municipality in Negros Oriental, Philippines. Established in 1947, 
+        the town has grown into a vibrant community that honors its heritage while embracing progress.
+        Known for agricultural production and warm Filipino hospitality, Pamplona offers a peaceful 
+        and authentic provincial experience.
+      </p>
+    </div>
+    <div class="row justify-content-center g-4 mb-5">
+      <div class="col-md-3">
+        <div class="p-4 text-center rounded-4 shadow card-overlay">
+          <div class="fs-1 mb-2">📍</div>
+          <h5 class="fw-bold">Location</h5>
+          <p class="m-0">Negros Oriental</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 text-center rounded-4 shadow card-overlay">
+          <div class="fs-1 mb-2">👥</div>
+          <h5 class="fw-bold">Population</h5>
+          <p class="m-0">~20,000</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 text-center rounded-4 shadow card-overlay">
+          <div class="fs-1 mb-2">🏛️</div>
+          <h5 class="fw-bold">Founded</h5>
+          <p class="m-0">1950</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 text-center rounded-4 shadow card-overlay">
+          <div class="fs-1 mb-2">❤️</div>
+          <h5 class="fw-bold">Barangays</h5>
+          <p class="m-0">28</p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="p-4 rounded-4 shadow card-overlay text-white">
+          <h4 class="fw-bold mb-3">Vision</h4>
+          <p>
+            A progressive, peaceful, and self-reliant municipality with empowered communities, sustainable
+            livelihood, and quality social services that promote the general welfare of every Pamplonganon.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 rounded-4 shadow card-overlay text-white">
+          <h4 class="fw-bold mb-3">Mission</h4>
+          <p>
+            To provide efficient and effective delivery of basic services through good governance, transparency,
+            and accountability. To promote sustainable development, preserve cultural heritage, and ensure the
+            well-being of all residents.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="attractions" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 display-5 fw-bold text-white">Top Attractions</h2>
+    <div class="row g-4 mb-4">
+      <div class="col-12">
+        <div class="attraction-card rounded-4 shadow-lg overflow-hidden">
+          <div class="image-wrapper">
+            <img src="images/church.jpg" alt="Pamplona Church">
+          </div>
+          <div class="card-content">
+            <h3 class="fw-bold">Pamplona Church</h3>
+            <p class="small">
+              A beautiful colonial-style church serving as the spiritual center of the community.
+              Famous for its stunning architecture and peaceful atmosphere.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="attraction-card rounded-4 shadow-lg overflow-hidden">
+          <div class="image-wrapper">
+            <img src="images/alicia.jpg" alt="Cafe Alicia">
+          </div>
+          <div class="card-content">
+            <h3 class="fw-bold">Cafe Alicia</h3>
+            <p class="small">
+              A scenic modern café offering great coffee, premium food, and breathtaking hillside views.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="attraction-card rounded-4 shadow-lg overflow-hidden">
+          <div class="image-wrapper">
+            <img src="images/palaypay.jpg" alt="Panasa Falls">
+          </div>
+          <div class="card-content">
+            <h4 class="fw-bold">Palaypay Falls</h4>
+            <p class="small">A relaxing nature spot perfect for swimming and hiking.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="attraction-card rounded-4 shadow-lg overflow-hidden">
+          <div class="image-wrapper">
+            <img src="images/rabbiton.jpg" alt="Rabbiton Farm">
+          </div>
+          <div class="card-content">
+            <h4 class="fw-bold">Rabbiton Farm</h4>
+            <p class="small">A family-friendly farm with mini attractions great for kids.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="attraction-card rounded-4 shadow-lg overflow-hidden">
+          <div class="image-wrapper">
+            <img src="images/sakada.jpg" alt="Sabang Spring">
+          </div>
+          <div class="card-content">
+            <h4 class="fw-bold">Sakada</h4>
+            <p class="small">It's perched on a scenic mountain view, offering not only delicious food but also a breathtaking backdrop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="food&accomodations" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 display-5 fw-bold text-white">Food & Accommodations</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3">
+        <div class="food-card rounded-4 shadow-lg overflow-hidden" style="background:#ff5733;">
+          <div class="food-img-wrapper">
+            <img src="images/carinderia.jpg" alt="Local Carinderia">
+          </div>
+          <div class="food-content text-white">
+            <h5 class="fw-bold">Local Carinderia</h5>
+            <p class="small mb-1">₱50–150</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="food-card rounded-4 shadow-lg overflow-hidden" style="background:#0099ff;">
+          <div class="food-img-wrapper">
+            <img src="images/seafoods.jpg" alt="Fresh Seafood">
+          </div>
+          <div class="food-content text-white">
+            <h5 class="fw-bold">Fresh Seafood</h5>
+            <p class="small mb-1">₱100–300</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="food-card rounded-4 shadow-lg overflow-hidden" style="background:#cc33ff;">
+          <div class="food-img-wrapper">
+            <img src="images/kakanin.jpg" alt="Traditional Kakanin">
+          </div>
+          <div class="food-content text-white">
+            <h5 class="fw-bold">Traditional Kakanin</h5>
+            <p class="small mb-1">₱20–100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center g-4 mt-4">
+      <div class="col-md-4">
+        <div class="food-card rounded-4 shadow-lg overflow-hidden" style="background:#8a3ffc;">
+          <div class="food-img-wrapper">
+            <img src="images/suites.jpg" alt="Local Inns & Lodging">
+          </div>
+          <div class="food-content text-white">
+            <h4 class="fw-bold">Local Inns & Lodging</h4>
+            <p class="small mb-1">₱500–1,200 / night</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="food-card rounded-4 shadow-lg overflow-hidden" style="background:#ff2e63;">
+          <div class="food-img-wrapper">
+            <img src="images/cabin.jpg" alt="Guest Houses">
+          </div>
+          <div class="food-content text-white">
+            <h4 class="fw-bold">Guest Houses</h4>
+            <p class="small mb-1">₱800–1,500 / night</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="events" style="background: url('/mnt/data/image (3).png') center/cover no-repeat fixed; padding: 80px 0;">
+  <div class="container text-white">
+    <h2 class="text-center mb-5 display-5 fw-bold">Festivals & Events</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-5">
+        <div class="event-card">
+          <div class="image-wrapper">
+            <img src="images/fiesta.jpg" alt="Town Fiesta">
+          </div>
+          <div class="event-overlay">
+            <h4 class="fw-bold">Town Fiesta</h4>
+            <p>📅 October 12</p>
+            <p>Annual celebration with street dancing & food festivals!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="event-card">
+          <div class="image-wrapper">
+            <img src="images/buglasan.jpg" alt="Buglasan">
+          </div>
+          <div class="event-overlay">
+            <h4 class="fw-bold">Buglasan</h4>
+            <p>📅 October 16-26</p>
+            <p>Celebrating Buglasan with cultural shows!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="officials" class="py-5">
+  <div class="container text-center">
+    <div class="official-banner mb-5">
+      <div class="official-banner-img-wrapper">
+        <img src="images/pamplona.jpg" alt="Municipal Hall">
+      </div>
+      <div class="official-banner-content">
+        <i class="bi bi-building fs-1 mb-2"></i>
+        <h2 class="fw-bold mb-1">Municipal Hall</h2>
+        <p>Serving the Community Since 1982</p>
+      </div>
+    </div>
+    <div class="row justify-content-center g-4 mb-5">
+      <div class="col-md-5">
+        <div class="official-card text-white">
+          <div class="official-img-wrapper">
+            <img src="images/mayor.jpg" alt="Mayor">
+          </div>
+          <div class="official-card-content">
+            <h4 class="fw-bold mb-2">Hon. Nikko Niño A. Ramirez</h4>
+            <p class="small">Municipal Mayor</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="official-card text-white">
+          <div class="official-img-wrapper">
+            <img src="images/vicemayor.png" alt="Vice Mayor">
+          </div>
+          <div class="official-card-content">
+            <h4 class="fw-bold mb-2">Hon. Joel G. Remolano</h4>
+            <p class="small">Vice Mayor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="row justify-content-center g-4">
+    <h2 class="text-center mb-5 display-5 fw-bold text-white">Councilor's</h2>
+  <div class="col-md-3 col-sm-6">
+    <div class="council-card council-transparent">
+      <p class="fw-bold mt-2">Arnold A. Labe</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="council-card council-transparent">
+      <p class="fw-bold mt-2">Lloyd Ian F. Aniñon</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="council-card council-transparent">
+      <p class="fw-bold mt-2">Shari T. Vallega</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="council-card council-transparent">
+      <p class="fw-bold mt-2">Renante L. Baldado</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="council-card council-transparent">
+      <p class="fw-bold mt-2">Edgar Q. Eba</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="council-card council-transparent">
+      <p class="fw-bold mt-2">Edgardo R. Retes</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="council-card council-transparent">
+      <p class="fw-bold mt-2">Reynaldo D. Tolomia</p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="council-card council-transparent">
+      <p class="fw-bold mt-2">Ruben A. Labe</p>
+    </div>
+  </div>
+
+</div>
+
+<section id="page" class="py-5 contact-bg">
+  <div class="container text-center text-white">
+
+    <h2 class="fw-bold mb-5">Contact Us</h2>
+
+    <div class="row justify-content-center mb-4">
+
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="contact-card shadow-lg p-4 rounded-4">
+          <i class="bi bi-geo-alt fs-2 mb-2"></i>
+          <h5>Address</h5>
+          <p class="small">Municipal Hall, Negros Oriental</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="contact-card shadow-lg p-4 rounded-4">
+          <i class="bi bi-telephone fs-2 mb-2"></i>
+          <h5>Phone</h5>
+          <p class="small">(035) XXX-XXXX</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="contact-card shadow-lg p-4 rounded-4">
+          <i class="bi bi-envelope fs-2 mb-2"></i>
+          <h5>Email</h5>
+          <p class="small">tourism@pamplona.gov.ph</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="contact-card shadow-lg p-4 rounded-4">
+          <i class="bi bi-clock fs-2 mb-2"></i>
+          <h5>Hours</h5>
+          <p class="small">Mon-Fri: 8AM–5PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="form-container p-4 rounded-4 shadow-lg">
+          <h4 class="mb-3">Send a Message</h4>
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email">
+              </div>
+            </div>
+            <div class="mb-3">
+              <select class="form-select">
+                <option selected>Select Subject</option>
+                <option>Inquiry</option>
+                <option>Feedback</option>
+                <option>Support</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-send w-100 py-2">
+              <i class="bi bi-send me-2"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="developer" class="py-5 text-center text-white">
+  <h2 class="dev-title fw-bold mb-4">The Developers</h2>
+<section id="developer" class="py-5">
+  <div class="group-photo-wrapper">
+    <img src="images/ma.jpg" alt="Group Photo 1" class="group-photo">
+    <img src="images/group1.jpg" alt="Group Photo 2" class="group-photo">
+  </div>
+</section>
+
+  <div class="dev-container d-flex flex-wrap justify-content-center gap-4">
+    <div class="dev-card p-3 rounded-4 shadow">
+      <img src="images/ike.png" class="dev-img mb-2" alt="Developer 1">
+      <h5 class="fw-bold">Angel Ike R. Durano</h5>
+    </div>
+
+    <div class="dev-card p-3 rounded-4 shadow">
+      <img src="images/vonn.png" class="dev-img mb-2" alt="Developer 2">
+      <h5 class="fw-bold">Vonn Christian J. Valde</h5>
+    </div>
+
+    <div class="dev-card p-3 rounded-4 shadow">
+      <img src="images/ahron.jpg" class="dev-img mb-2" alt="Developer 3">
+      <h5 class="fw-bold">Mac Ahron B. Restauro</h5>
+    </div>
+
+    <div class="dev-card p-3 rounded-4 shadow">
+      <img src="images/dexter.jpg" class="dev-img mb-2" alt="Developer 4">
+      <h5 class="fw-bold">Dexter B. Luces</h5>
+    </div>
+
+    <div class="dev-card p-3 rounded-4 shadow">
+      <img src="images/danilo.jpg" class="dev-img mb-2" alt="Developer 5">
+      <h5 class="fw-bold">Danilo F. Tanguan Jr.</h5>
+    </div>
+
+  </div>
+  <div class="thankyou-box mt-5 p-4 rounded-4 shadow text-white">
+    <h3>Thank You for Visiting!</h3>
+    <p>We hope this website inspires you to visit beautiful Pamplona, Negros Oriental!</p>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
