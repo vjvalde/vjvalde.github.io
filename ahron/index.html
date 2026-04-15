@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      overflow: hidden; /* Prevents scrollbars when the button moves to the edges */
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .button-container {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px; /* Spaces the buttons apart initially */
+    }
+
+    button {
+      padding: 15px 40px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      transition: transform 0.1s;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    #yesBtn {
+      background-color: #4CAF50; /* Green */
+    }
+
+    #noBtn {
+      background-color: #f44336; /* Red */
+      /* Removed the absolute positioning here so it sits next to the Yes button */
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="mainText">Is ahron Bayot?</h1>
+  
+  <div class="button-container" id="btnContainer">
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById('yesBtn');
+    const noBtn = document.getElementById('noBtn');
+    const mainText = document.getElementById('mainText');
+    const btnContainer = document.getElementById('btnContainer');
+
+    // Logic for when they finally click "Yes"
+    yesBtn.addEventListener('click', () => {
+      mainText.innerText = "yes daddy";
+      btnContainer.style.display = 'none'; // Hides the buttons to show only the text
+    });
+
+    // Logic to make the "No" button run away
+    noBtn.addEventListener('mouseover', () => {
+      // Get the width and height of the window
+      const xMax = window.innerWidth - noBtn.offsetWidth;
+      const yMax = window.innerHeight - noBtn.offsetHeight;
+      
+      // Calculate a random X and Y position
+      const randomX = Math.floor(Math.random() * xMax);
+      const randomY = Math.floor(Math.random() * yMax);
+
+      // Apply the new position to the No button
+      noBtn.style.position = 'fixed'; // It becomes detached only when hovered over
+      noBtn.style.left = `${randomX}px`;
+      noBtn.style.top = `${randomY}px`;
+    });
+  </script>
+
+</body>
+</html>
